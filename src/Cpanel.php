@@ -292,7 +292,7 @@ Class Cpanel extends xmlapi {
         if (isset($result['data'])) {
             $data = $result['data'];
             if (is_array($data)) {
-                $reason = (string)$data['reason'];
+                $reason = !is_array($data['reason']) ? (string)$data['reason'] : '';
                 $status = (string)$data['result'];
 
                 if (mb_strpos($reason, ')') !== false) {

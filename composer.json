@@ -1,14 +1,18 @@
 {
-  "name": "zanysoft/cpanel-api",
+  "name": "kottergroup/cpanel-api",
   "description": "Cpanel's API",
   "license": "MIT",
   "authors": [
     {
       "name": "Zany Soft",
       "email": "info@zanysoft.co"
-    }
+    },{
+        "name": "Keith Gallant",
+        "email": "keith@keithgallant.com",
+        "homepage": "http://kotter.net",
+        "role": "Contributor"
+     }
   ],
-  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "ZanySoft\\Cpanel\\": "src/"
