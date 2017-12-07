@@ -292,6 +292,7 @@ Class Cpanel extends xmlapi {
         if (isset($result['data'])) {
             $data = $result['data'];
             if (is_array($data)) {
+                /**** Added by Keith - $data['reason'] is being return as an empty array */
                 $reason = !is_array($data['reason']) ? (string)$data['reason'] : '';
                 $status = (string)$data['result'];
 
